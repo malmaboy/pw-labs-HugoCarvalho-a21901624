@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hugo Carvalho">
+    <meta name="keywords" content="palavras chave">
+    <meta name="description" content="Website sobre Luanda">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <title>Luanda</title>
+</head>
+<body style="background-color: cornflowerblue">
+
+<header>
+    <h1 style="color: darkslateblue; border: 2px solid chocolate">Luanda </h1>
+    <img width="300px" src="images/luanda.jpeg">
+</header>
+<main>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Introdução</a>
+        <a href="local.html"> Localização</a>
+        <a href="multimedia.html"> Multimedia</a>
+        <a href="info.html">Informações</a>
+        <a href="quizz.html">Quizz</a>
+    </nav>
+    <section>
+        <h3>Quizz</h3>
+        <p>Nesta página será feito um quizz para testar o seu conhecimento sobre a cidade aprensentada.</p>
+
+        <fieldset style="display: inline">
+            <legend style="font-size: 24px; font-family: 'Apple Symbols'"> Quizz sobre a cidade de Luanda</legend>
+            <fieldset style="display: inline">
+                 <legend>Dados</legend>
+                <form method="post"
+                action="mailto:huguinho66@live.com"  enctype="multipart/form-data" autocomplete="on">
+                    <!-- Text -->
+                    Nome: <input type="text" name="Nome" size="40" required autofocus> <br>
+                    Apelido: <input type="text" name="Apelido" size="40" required autofocus> <br>
+                    email : <input type="text" name="email" maxlength="35" required autofocus  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+                    <input type="submit" value="Enviar Dados">
+                </form>
+            </fieldset>
+            <br>
+            <fieldset style="display: inline">
+                <form method="post" action="mailto:huguinho66@live.com" enctype="multipart/form-data">
+                    <legend style ="font-size: 20px">Perguntas</legend>
+                    <!-- Date -->
+                    <p>Ponha a data de hoje</p>
+                    <label for="todayDate"> Data do dia </label>
+                    <input type="date" id="todayDate" name="todayDate">
+                    <!-- Radio-->
+                    <p>Qual é a Capital de Angola?</p>
+                    <div>
+                    <input type="radio" name="Capital" id="Huambo">
+                        <label for="Huambo"> Huambo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Capital" id="Moxico">
+                        <label for="Moxico"> Moxico</label>
+                    </div>
+                    <div>
+                    <input type="radio" name="Capital" id="Luanda">
+                        <label for="Luanda">Luanda</label>
+                    </div>
+                    <!-- Checkbox -->
+                    <div>
+                        <p>Qual destas opções descreve o clima de Luanda?</p>
+                        <input type="checkbox" id="opcao1" value="opcao1">
+                        <label for="opcao1"> Clima Tropical com uma estação quente e húmida de outubro a maio e uma
+                            estação fria e seca, o cacimbo, de junho a setembro.
+                        </label> <br>
+                        <input type="checkbox" id="opcao2" value="opcao2">
+                        <label for="opcao2"> A estação morna permanece por 3,5 meses, de 13 de dezembro a 31 de março,
+                            com temperatura máxima média diária acima de 28 °C. O mês mais quente do ano é janeiro,
+                            com a máxima de 29 °C e mínima de 23 °C, em média.
+                            A estação fresca permanece por 2,5 meses, de 3 de junho a 20 de agosto, com temperatura
+                            máxima diária em média abaixo de 24 °C. O mês mais frio do ano em é julho,
+                            com a máxima de 16 °C e mínima de 23 °C, em média.
+                        </label> <br>
+                    </div>
+                    <!-- Range -->
+                    <p>Qual é a temperatura média de Luanda?</p>
+                    <div>
+                        <label for="temp">15º-35º Graus Celcius</label>
+                        <input type="range" id ="temp" name ="temp" min="15" max="45" value="20">
+                    </div>
+                    <div>
+                        <p>Qual destas cidades é luanda?</p>
+                        <input type="image" id="lisboa" src="images/Lisboa.avif" height="150p">
+                        <input type="image" id="Johannesburg" src="images/johannesburg.jpeg" height="150p">
+                        <input type="image" id="luandaCidade" src="images/LuandaCentro_Grande.jpeg" height="150p" >
+                    </div>
+                    <!-- Number --->
+                    <div>
+                        <p>Qual é o número de habitantes em Luanda?</p>
+                        <label>Número de habitantes</label>
+                        <input type="number" id="hab" min="100000"  max="5000000" >
+                    </div>
+                    <!-- Color -->
+                    <div>
+                        <p>Quais são as cores da bandeira do país que Luanda pertence?</p>
+                        <input type="color" id="color1">
+                        <input type="color" id="color2">
+                        <input type="color" id="color3">
+                    </div>
+                    <!-- Datalist --->
+                    <div>
+                        <label for="oceano"> Qual oceano banha a cidade de Luanda?</label>
+                        <input list="oceanos" name="oceanos" id="oceano">
+                        <datalist id="oceanos">
+                            <option value="Oceano Pacifico"></option>
+                            <option value="Oceano Atlantico"></option>
+                            <option value="Oceano Indico"></option>
+                            <option value="Oceano Antártico"></option>
+                            <option value="Oceano Glacial Ártico"></option>
+                        </datalist>
+                    </div>
+                    <!-- Select -->
+                    <div>
+                        <label for="anoDeFundacao"> Em que ano foi fundada a cidade de Luanda?</label>
+                        <select id="anoDeFundacao" name="anoDeFundacao">
+                            <option value="1450"> 1450</option>
+                            <option value="1576"> 1576</option>
+                            <option value="1547"> 1547</option>
+                            <option value="1975"> 1975</option>
+                        </select>
+                    </div>
+                     <!-- Comments -->
+                    <div>
+                        <label for="Comentarios"> Comentários sobre o inquerito:</label>
+                        <textarea id="Comentarios" name ="Comentarios" rows="5" cols="60"></textarea>
+                    </div>
+                    <!-- Submit -->
+                    <div>
+                       <input type="submit" value="Submeter respostas">
+                   </div>
+                </form>
+            </fieldset>
+        </fieldset>
+
+    </section>
+</main>
+</body>
+<footer>Hugo Carvalho, a21901624, Universidade Lusófona de Humanidades e Tecnologias,2021/2022</footer>
+</html>
