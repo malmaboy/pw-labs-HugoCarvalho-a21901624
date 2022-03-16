@@ -6,6 +6,9 @@
     <meta name="keywords" content="palavras chave">
     <meta name="description" content="Website sobre Luanda">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos.css">
     <title>Luanda</title>
 </head>
 <body style="background-color: cornflowerblue">
@@ -15,19 +18,20 @@
     <img width="300px" src="images/luanda.jpeg">
 </header>
 <main>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="index.html">Introdução</a>
-        <a href="local.html"> Localização</a>
-        <a href="multimedia.html"> Multimedia</a>
-        <a href="info.html">Informações</a>
-        <a href="quizz.html">Quizz</a>
+    <nav class="nav">
+        <i class="material-icons">home</i><a  href="../index.html">Home</a>
+        <i class="material-icons">description</i> <a href="index.html"> Introdução</a>
+        <i class="material-icons">explore</i><a href="local.html">  Localização</a>
+        <i class="material-icons">play_arrow</i><a href="multimedia.html"> Multimedia</a>
+        <i class="material-icons">info</i><a href="info.html"> Informações</a>
+        <i class="material-icons">question_mark</i><a href="quizz.html"> Quizz</a>
+        <i class="material-icons">html</i><a href="html5-css.html"> HTML CSS</a>
     </nav>
     <section>
         <h3>Quizz</h3>
         <p>Nesta página será feito um quizz para testar o seu conhecimento sobre a cidade aprensentada.</p>
 
-        <fieldset style="display: inline">
+        <fieldset >
             <legend style="font-size: 24px; font-family: 'Apple Symbols'"> Quizz sobre a cidade de Luanda</legend>
             <fieldset style="display: inline">
                  <legend>Dados</legend>
@@ -42,7 +46,7 @@
             </fieldset>
             <br>
             <fieldset style="display: inline">
-                <form method="post" action="mailto:huguinho66@live.com" enctype="multipart/form-data">
+                <form method="post" action="mailto:huguinho66@live.com" enctype="multipart/form-data" >
                     <legend style ="font-size: 20px">Perguntas</legend>
                     <!-- Date -->
                     <p>Ponha a data de hoje</p>
