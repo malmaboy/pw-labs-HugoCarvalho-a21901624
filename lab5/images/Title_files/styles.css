@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+*{
+    font-family: "League Spartan"; /* Font imoportada pelo link acima*/
+
+}
+/*Capaitais*/
+.capitais{
+    /*Classe capitais */
+    display: flex; /**/
+    flex-flow: row wrap; /* caixas dispostas em linha fazendo e fazendo quebra de linha se necessário*/
+    gap: 50px 100px;
+    background-color: cadetblue; /**/
+    padding: 50px; /*tamanho da caixa*/
+    border-radius: 20px;
+
+    
+}
+
+.capitais > div {
+    /*Este seletor identifica todos os elementos "filhos" div da classe capitais */
+    display: flex; /**/
+    border-radius: 20px; /*arredonda os cantos*/
+    overflow: hidden; /*põe as imagens arredondadas de acordo com os cantos*/
+    box-shadow: 5px 5px 15px grey; /*cria sombra a volta das imagens*/
+    margin: 20px; /* garante um espaçamento mínimo entre elementos*/
+}
+
+.capitais img{
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    /* este seletor identifica os divs com o parágrafo com nome da capital
+    (último div filho de cada div dentro do elemento com classe capitais)*/
+    width: 150px;
+    background-color: white;
+    padding: 20px; /*Aumenta a area de texto*/
+
+    /*para centrar nome da capital na caixa (horizontal e vertical)*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*Cabeçalho*/
+
+.menu{
+    display: flex;
+}
+
+.menu a:last-child{
+    margin-left: auto;
+}
+
+.menu a{
+    padding: 20px;
+    text-decoration: none;
+    color: darkblue;
+
+}
+
+.menu a:hover{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.menu-imagem{
+    background-image: url("images/bruxelas.avif");
+    background-size: cover ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.menu-imagem div{
+    justify-content: center;
+    align-content: center;
+
+}
+
+/*Dicas para viajantes*/
+
+.dicas-viajantes{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+
+.dicas-viajantes > div{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px; /*arredonda os cantos*/
+    overflow: hidden; /*põe as imagens arredondadas de acordo com os cantos*/
+    box-shadow: 5px 5px 15px grey; /*cria sombra a volta das imagens*/
+    justify-content: center;
+    align-content: center;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.dicas-viajantes div div:last-child{
+    font: 25px "Al Bayan";
+}
+
+.dicas-viajantes h1{
+    font: 25px bold;
+    text-align: center;
+}
+
+/*Destinos de Sonho*/
+
+.destinos{
+    display: grid;
+    flex-flow: wrap;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+.destinos div{
+    background-size: cover;
+}
+
+.destinos > div{
+    width: 250px;
+    height: 200px;
+    border: solid black;
+
+
+
+}
+
+.porto{
+    background-image: url("images/porto.png");
+}
+
+.lisboa{
+    background-image: url("images/lisboa.png");
+}
+
+.evora{
+    background-image: url("images/evora.png");
+}
+
+.alentejo{
+    background-image: url("images/alentejo.png");
+}
+
+.algarve{
+    background-image: url("images/algarve.png");
+}
+
+.barreiro{
+    background-image: url("images/barreiro.png");
+}
